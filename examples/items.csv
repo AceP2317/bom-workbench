@@ -1,0 +1,23 @@
+item_id,description,item_type,base_uom
+FG-AB900,AuroraBrew 900 espresso machine,make,EA
+FG-AB600,AuroraBrew 600 compact espresso machine,make,EA
+SA-BREW01,Brew group assembly,make,EA
+SA-BOILER,Boiler assembly,make,EA
+SA-HOUS01,Housing assembly,make,EA
+SA-UI01,Control panel assembly,make,EA
+CP-PUMP15,15-bar vibration pump,buy,EA
+CP-HEAT12,Heating element 1200 W,buy,EA
+CP-THERM,Thermostat,buy,EA
+CP-GASK-S,Silicone gasket,buy,EA
+CP-VALV3,3-way solenoid valve,buy,EA
+CP-PANL-L,Side panel,make,EA
+CP-SCRM4,M4 screw,buy,EA
+CP-PCB01,Controller PCB,buy,EA
+CP-DISP1,OLED display,buy,EA
+CP-DISP2,LCD display,buy,EA
+CP-PORTA,Portafilter,make,EA
+CP-CORD,Power cord,buy,EA
+CP-MANL,User manual,buy,EA
+CP-BODY6,Compact body shell,buy,EA
+RM-STEEL,Stainless steel sheet,buy,KG
+RM-ABS,ABS resin,buy,KG

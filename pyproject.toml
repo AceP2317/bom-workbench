@@ -1,0 +1,49 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "bom-workbench"
+version = "0.1.0"
+description = "BOM/MRP data toolkit - multi-level BOM explosion, where-used lookup, and production-plan churn analysis over plain CSV. Zero runtime dependencies."
+readme = "README.md"
+requires-python = ">=3.12"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Ian Provencher" }]
+keywords = ["bom", "mrp", "supply-chain", "manufacturing", "planning", "cli"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Environment :: Console",
+  "Intended Audience :: Manufacturing",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Office/Business",
+  "Typing :: Typed",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.8"]
+
+[project.urls]
+Repository = "https://github.com/AceP2317/bom-workbench"
+Issues = "https://github.com/AceP2317/bom-workbench/issues"
+
+[project.scripts]
+bomwb = "bom_workbench.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/bom_workbench"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM", "RUF"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
